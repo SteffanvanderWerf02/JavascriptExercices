@@ -1,22 +1,22 @@
-class Palindrome{
-    constructor(word){
+class Palindrome {
+    constructor(word) {
         this.word = word;
     }
-    
-    setWord(word){
+
+    setWord(word) {
         this.word = word
     }
 
-    getWord(){
+    getWord() {
         return this.word;
     }
 
-    isPalindrome(){
+    isPalindrome() {
         let reverseWord = this.getWord().split("").reverse().join("");
-        if(this.word === reverseWord){
+        if (this.word === reverseWord) {
             document.getElementById("Palindrome").textContent = true;
         }
-        else{
+        else {
             document.getElementById("Palindrome").textContent = false;
         }
     }
