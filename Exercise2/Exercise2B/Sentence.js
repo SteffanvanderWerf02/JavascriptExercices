@@ -1,5 +1,9 @@
 class Sentence {
-    constructor(Sentence) {     
-        this.Sentence = Sentence;
+    constructor(sentence) {     
+        this.sentence = sentence;
+    }
+
+    getSentence() {
+        return this.sentence;
     }
 }
