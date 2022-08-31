@@ -1,18 +1,18 @@
-class Song{
-    constructor(title){
+class Song {
+    constructor(title) {
         this.title = title;
         this.couplets = [];
-    }  
-    addCouplet(couplet){
+    }
+    addCouplet(couplet) {
         this.couplets.push(couplet);
     }
-    getCouplets(){
+    getCouplets() {
         return this.couplets;
     }
-    getTitle(){
+    getTitle() {
         return this.title;
     }
-    setTitle(title){
+    setTitle(title) {
         this.title = title;
     }
 
@@ -25,8 +25,5 @@ class Song{
                 document.getElementById("songText").append(p)
             })
         });
-
-
     }
-
 }
