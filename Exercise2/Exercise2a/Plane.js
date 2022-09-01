@@ -13,7 +13,7 @@ class Plane {
         const index = this.passengers.indexOf(passenger);
         if (index === -1) {
             return;
-        } 
+        }
         this.passengers.splice(index, 1);
     }
 
@@ -33,11 +33,11 @@ class Plane {
         this.capacity = capacity;
     }
 
-    getName() { 
+    getName() {
         return this.name;
     }
 
-    setName(name) { 
+    setName(name) {
         this.name = name;
     }
 

@@ -1,14 +1,13 @@
 class Couplet {
     constructor() {
-       this.sentences = []
+        this.sentences = []
     }
 
-    addSentence(Sentence){
+    addSentence(Sentence) {
         this.sentences.push(Sentence)
     }
 
-    getSentence()
-    {
+    getSentence() {
         return this.sentences
     }
 }

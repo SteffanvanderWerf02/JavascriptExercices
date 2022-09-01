@@ -1,5 +1,5 @@
 class Sentence {
-    constructor(sentence) {     
+    constructor(sentence) {
         this.sentence = sentence;
     }
 

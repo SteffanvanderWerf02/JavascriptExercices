@@ -8,15 +8,15 @@ class flight {
         this.plane = plane;
     }
 
-    getName() { 
+    getName() {
         return this.name;
     }
 
-    setName(name) { 
+    setName(name) {
         this.name = name;
     }
 
-    setDeparture(departure) {  
+    setDeparture(departure) {
         this.departure = departure;
     }
 
@@ -24,15 +24,15 @@ class flight {
         return this.departure;
     }
 
-    setArrival(arrival) {   
-        this.arrival = arrival; 
+    setArrival(arrival) {
+        this.arrival = arrival;
     }
 
     getArrival() {
         return this.arrival;
     }
 
-    setArrivalTime(arrivalTime) {   
+    setArrivalTime(arrivalTime) {
         this.arrivalTime = arrivalTime;
     }
 
@@ -40,7 +40,7 @@ class flight {
         return this.departureTime;
     }
 
-    setArrivalTime(arrivalTime) {   
+    setArrivalTime(arrivalTime) {
         this.arrivalTime = arrivalTime;
     }
 
@@ -54,5 +54,5 @@ class flight {
 
     setPlane(plane) {
         this.plane = plane;
-    }   
+    }
 }

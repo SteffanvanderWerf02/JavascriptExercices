@@ -3,7 +3,7 @@ class Passenger {
         this.name = name;
         this.destination = destination;
     }
-    getName() { 
+    getName() {
         return this.name;
     }
     setName(name) {
