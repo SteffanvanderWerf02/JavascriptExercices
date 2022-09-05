@@ -7,20 +7,23 @@ class Machine {
     }
 
     insertCoin(coin) {
-        console.log(this.acceptedCoins)
-        console.log(coin);
         if (this.acceptedCoins.includes(coin)) {
             let transaction = this.pay(coin);
+            if (transaction > 0) {
+                document.getElementById("moneyOwed").textContent = transaction + " Cents";
+            } else if (transaction == 0) {
+                document.getElementById("moneyOwed").textContent = "U heeft alles betaald!";
 
-            document.getElementById("moneyOwed").textContent = transaction + " Cents";
+            } else {
+                document.getElementById("moneyOwed").textContent = "U krijgt " + Math.abs(transaction) + " cent terug";
+            }
         } else {
-            alert("not right coin you can insert 5 , 10 , 25")
+            alert("U heeft niet de juiste munt er in gegooid u kunt alleen betalen met munten van 5 , 10 en 25")
         }
     }
 
     pay(amount) {
-        return this.cost - amount;
-        console.log("payed")
+        return this.cost = this.cost - amount;
     }
 
 
