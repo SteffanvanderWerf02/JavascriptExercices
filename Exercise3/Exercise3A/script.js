@@ -1,6 +1,10 @@
-let string = new Morse();
+let cookie = new LuckyCookie();
 
+// document.addEventListener("DOMContentLoaded", () => {
+//     document.getElementById("quote").textContent = cookie.GiveMeAnNiceQuote();
+// })
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("Morse").textContent = string.convertWordToMorse("Sylvana");
-
+    document.getElementById("nowPlease").addEventListener("click", function () {
+        document.getElementById("quote").textContent = cookie.GiveMeAnNiceQuote();
+    })
 })
