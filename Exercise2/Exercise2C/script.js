@@ -1,5 +1,5 @@
 
-let word = new Palindrome("racecar");
+let word = new Palindrome("steffan");
 
 document.addEventListener("DOMContentLoaded", function () {
     word.isPalindrome();
