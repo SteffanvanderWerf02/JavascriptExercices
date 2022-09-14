@@ -1,4 +1,4 @@
-class flight {
+class Flight {
     constructor(name, departure, arrival, departureTime, arrivalTime, plane) {
         this.name = name;
         this.departure = departure;

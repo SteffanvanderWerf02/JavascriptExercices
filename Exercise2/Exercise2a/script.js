@@ -15,9 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("airportName").innerHTML = airport.getName();
     document.getElementById("airportPlaneCount").innerHTML = airport.getPlaneCount();
     document.getElementById("airportFlightCount").innerHTML = airport.getFlightCount();
-    document.getElementById("flightNumber").innerHTML = flight.getNumber();
-    document.getElementById("flightOrigin").innerHTML = flight.getOrigin();
-    document.getElementById("flightDestination").innerHTML = flight.getDestination();
+    document.getElementById("flightDestination").innerHTML = flight.getDeparture();
+    document.getElementById("flightArrival").innerHTML = flight.getArrival();
     document.getElementById("flightDepartureTime").innerHTML = flight.getDepartureTime();
     document.getElementById("flightArrivalTime").innerHTML = flight.getArrivalTime();
     document.getElementById("flightPlane").innerHTML = flight.getPlane().getName();
